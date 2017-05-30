@@ -100,13 +100,20 @@ body {
 	width: 100%;
 }
 
-.name, .error, .reload, #counter { font-weight: bold; }
+.name, .account_stats, .error, .reload, #counter { font-weight: bold; }
 
 .name {
 	font-size: 16px;
-	margin: 4px;
+	margin: 6px;
 	text-align: center;
 	cursor: pointer;
+	overflow: hidden;
+}
+
+.account_stats {
+	font-size: 16px;
+	margin: 2px;
+	text-align: center;
 	overflow: hidden;
 }
 
@@ -308,9 +315,7 @@ td.cont > div {
 }
 
 /* stars */
-.scont {
-	background-color: #222;
-	border-radius: 6px;
+.scont, .current_fame, .total_fame, .gold, .token, .guild_founder, .guild_leader, .guild_officer, .guild_member, .guild_initiate    {
 	float: left;
 	padding: 1px 1px 1px 4px;
 	font-weight: normal;
@@ -325,6 +330,42 @@ td.cont > div {
 
 .warn {
 	color: #d70;
+}
+
+.current_fame, .total_fame {
+	background: url(fame.png)no-repeat 90% 50%;
+	padding: 1px 44px 1px 4px;
+ }
+
+ .gold {
+	background: url(gold.png) no-repeat 90% 50% ;
+	padding: 1px 28px 1px 4px;
+ }
+
+.token {
+	background: url(token.png)no-repeat 90% 50%;
+	padding: 1px 28px 1px 4px;
+}
+
+.guild_founder {
+	background: url(founder.png)no-repeat left 50%;
+	padding: 1px 4px 1px 28px;
+}
+.guild_leader {
+	background: url(leader.png)no-repeat left 50%;
+	padding: 1px 4px 1px 28px;
+}
+.guild_officer {
+	background: url(officer.png)no-repeat left 50%;
+	padding: 1px 4px 1px 28px;
+}
+.guild_member {
+	background: url(member.png)no-repeat left 50%;
+	padding: 1px 4px 1px 28px;
+}
+.guild_initiate {
+	background: url(initiate.png)no-repeat left 50%;
+	padding: 1px 4px 1px 28px;
 }
 
 /* overlay + log */
